@@ -1,5 +1,5 @@
 = Introduction =
 
-This is a Visual 2008 project. It has been tested with Wwise 2010.3.2
+This is a Visual 2010 project. It has been tested with Wwise 2011.1
 
 Of course, Wwise SDK is required to compiled WwiseSharp.
