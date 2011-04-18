@@ -30,6 +30,11 @@ namespace WwiseSharp
 		AkGameObjectID GetAkObjectId();
 		char* GetLabelChar();
 
+		// This method take as parameter a BitMask to decide which listener should be used by this game object. By default, the game object only use Listener #1.
+		// For more details, refer to the Wwise Documentation: WwiseSDK-Windows.chm > Sound Engine Integration Walkthrough > Integrate Wwise Elements into Your Game > Integrating Listeners > Assigning Game Objects to Listeners.
+		// For exemple, if you want to only use Listener #2 only (most of the time you don't need more than 1 listener) for this game object, use MyGameObject.SetActiveListeners( (ulong)(2 << (ListenerIndex)) );
+		void SetActiveListeners(unsigned long listenerMask);
+
 		void PostEvent(System::String^ eventName);
 		void PostEvent(unsigned long eventId);
 

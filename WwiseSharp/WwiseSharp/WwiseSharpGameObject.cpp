@@ -28,6 +28,11 @@ char* WwiseSharpGameObject::GetLabelChar()
 	return label;
 }
 
+void WwiseSharpGameObject::SetActiveListeners(unsigned long listenerMask)
+{
+	engine->SetActiveListeners(objectId, listenerMask);
+}
+
 void WwiseSharpGameObject::PostEvent(System::String^ eventName)
 {
 	System::IntPtr p = System::Runtime::InteropServices::Marshal::StringToHGlobalUni(eventName);
