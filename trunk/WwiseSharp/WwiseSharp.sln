@@ -1,12 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WwiseWrapper", "WwiseWrapper\WwiseWrapper.vcproj", "{81459DC5-89B3-445F-81D1-25F579A00E3E}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WwiseWrapper", "WwiseWrapper\WwiseWrapper.vcxproj", "{81459DC5-89B3-445F-81D1-25F579A00E3E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WwiseSharp", "WwiseSharp\WwiseSharp.vcproj", "{B8925513-FCCF-4A5A-8588-203B4A0BC553}"
-	ProjectSection(ProjectDependencies) = postProject
-		{81459DC5-89B3-445F-81D1-25F579A00E3E} = {81459DC5-89B3-445F-81D1-25F579A00E3E}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WwiseSharp", "WwiseSharp\WwiseSharp.vcxproj", "{B8925513-FCCF-4A5A-8588-203B4A0BC553}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution

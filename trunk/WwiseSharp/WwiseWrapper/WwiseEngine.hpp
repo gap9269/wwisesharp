@@ -22,7 +22,7 @@
 	#include <AK/Plugin/AkVorbisFactory.h>						// Vorbis Plugin.
 #endif
 #ifdef DEBUG
-    #include <AK/Comm/AkCommunication.h>						// Communication (is the component which allow Wwise editor to track Game Instance).
+	#include <AK/Comm/AkCommunication.h>						// Communication (is the component which allow Wwise editor to track Game Instance).
 #endif
 
 namespace WwiseWrapper
@@ -62,6 +62,8 @@ namespace WwiseWrapper
 
 		void SetPosition(AkGameObjectID gameObjectId, AkSoundPosition& position);
 		void SetPosition(AkGameObjectID gameObjectId, AkSoundPosition& position, int listenerIndex);
+
+		void SetActiveListeners(AkGameObjectID gameObjectId, AkUInt32 listenerMask);
 	};
 }
 
